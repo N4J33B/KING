@@ -161,10 +161,10 @@ logo=("""\033[1;97m
 
  \33[1;37m----------------------------------------------
       →   Owner         :  HAJI
-      →   Facebook   : ĸΑМЯΑИ
-      →   Github         : ĸAМRAN
-      →   Tool Type   : ғree
-      →   Version       :  1.4
+      →   Facebook      :  ĸΑМЯΑИ
+      →   Github        : ĸAМRAN
+      →   Tool Type     : ғree
+      →   Version       :  1.5
 \x1b[1;97m
 \33[1;37m----------------------------------------------""")
 def linex():
