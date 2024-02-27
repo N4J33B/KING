@@ -161,7 +161,7 @@ logo=("""\033[1;97m
       →   Owner         : NAJEEB
       →   Facebook      : NAJEEB
       →   Github        : NAJEEB
-      →   Tool Type     : ғree
+      →   Tool Type     : paid
       →   Version       : 1.3
 \x1b[1;97m
 \33[1;37m----------------------------------------------""")
