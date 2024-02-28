@@ -164,7 +164,7 @@ logo=("""\033[1;97m
       →   Facebook      :  ĸΑМЯΑИ
       →   Github        : ĸAМRAN
       →   Tool Type     : ғree
-      →   Version       :  1.5
+      →   Version       :  1.6
 \x1b[1;97m
 \33[1;37m----------------------------------------------""")
 def linex():
